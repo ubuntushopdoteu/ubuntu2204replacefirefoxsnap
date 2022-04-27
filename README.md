@@ -11,6 +11,13 @@ chmod +x firefoxfavorites.sh
 
 sudo bash firefoxfavorites.sh
 
+
+
+
+
 Enjoy!
+
 www.ubuntushop.be
+
 Ubuntu notebooks and computers.
+

@@ -10,7 +10,8 @@ Pin-Priority: 1001
 
 echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' |  tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 apt-get -y  install  firefox
-apt-get -y  install  gnome-shell-extension-manager
+#uncomment if you want to install gnome-shell-extension-manager
+#apt-get -y  install  gnome-shell-extension-manager (only for ubuntu)
 #su - "$USER" -c "`gsettings set org.gnome.shell favorite-apps "['firefox.desktop', $(gsettings get org.gnome.shell favorite-apps | sed 's/^.//') "`"
 RUID=$(who | awk 'FNR == 1 {print $1}')
 

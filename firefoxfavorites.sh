@@ -18,4 +18,4 @@ RUID=$(who | awk 'FNR == 1 {print $1}')
 RUSER_UID=$(id -u ${RUID})
 
 # Set gsettings for the Real User
-sudo -u ${RUID} DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/${RUSER_UID}/bus" gsettings set org.gnome.shell favorite-apps "['firefox.desktop', $(gsettings get org.gnome.shell favorite-apps | sed 's/^.//') "
+#sudo -u ${RUID} DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/${RUSER_UID}/bus" gsettings set org.gnome.shell favorite-apps "['firefox.desktop', $(gsettings get org.gnome.shell favorite-apps | sed 's/^.//') "
